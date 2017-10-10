@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6825F6D-B519-B4D4-19F7-EAE16CA80075" name="locations">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:19:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="location_id" id="2EFADE6E-BD27-9AE8-FCF4-5544592F539A">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:20:09 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location_type_id" id="0167E8B5-46E3-A54D-BF39-3623F61C492C">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:20:23 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EC012EE-EE84-16AE-4E7C-6D1AB9589B0D" referredColumn="B0030443-0B50-D7D0-FF96-45758BC47DC7"/>
+</associations>
+</Column>
+<Column name="name" id="8D76AB01-4CE5-B112-6E46-29AF21BE7F32">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:21:32 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude" id="BCC4ED02-3CFE-4A54-BC4D-D9465BF18F08">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:22:46 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>6D4B3182-4EBA-F373-DD51-DB963CAD8C9F</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude" id="C997ECE7-0040-A7D0-A96A-9569A31CC6EF">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:22:57 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>6D4B3182-4EBA-F373-DD51-DB963CAD8C9F</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="4238D290-9583-29E4-6735-4C90BE867E8F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:23:11 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>C8FD8A27-03C8-FB21-1657-2041DA7808F9</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="radius" id="DA09FFF2-6F3A-F4A9-9370-78334F1CA5E2">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:23:39 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>6D4B3182-4EBA-F373-DD51-DB963CAD8C9F</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83F49232-1BFD-B2D6-A6AE-A4F0D5E731CE" name="locations_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:20:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFADE6E-BD27-9AE8-FCF4-5544592F539A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0F27CC1-A4F7-BDEE-9B51-7B8C9A9AC111" name="locations_location_type_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 14:20:56 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0167E8B5-46E3-A54D-BF39-3623F61C492C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

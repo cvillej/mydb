@@ -31,6 +31,17 @@
 <colAssociation fkAssociation="55E75AEB-A40B-71BA-5E5B-648924E31D60" referredColumn="1A0386BD-0154-6D6A-6C5C-9F1E6D23570B"/>
 </associations>
 </Column>
+<Column name="name" id="2E882098-3AC0-B8D4-3398-A42A1FA6B75A">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 15:08:54 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="96969BF6-D79E-3932-2955-5315924D5B48" name="tag_PK">

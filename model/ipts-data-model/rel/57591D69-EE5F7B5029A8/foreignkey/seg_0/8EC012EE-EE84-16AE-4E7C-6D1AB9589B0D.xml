@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="791A3206-EC33-199F-B885-AB02029E77BE" containerWithKeyObject="8122333F-AB4E-B7F6-B3F5-59F013022747" localFKIndex="F1017300-DD3E-D602-BC2A-85C9F8313C1E" name="locations_location_type_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8EC012EE-EE84-16AE-4E7C-6D1AB9589B0D" containerWithKeyObject="A6825F6D-B519-B4D4-19F7-EAE16CA80075" localFKIndex="A0F27CC1-A4F7-BDEE-9B51-7B8C9A9AC111" name="locations_location_type_FK">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-09 16:02:57 UTC</createdTime>
+<createdTime>2017-10-10 14:20:56 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <referredTableLongName>location_type</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

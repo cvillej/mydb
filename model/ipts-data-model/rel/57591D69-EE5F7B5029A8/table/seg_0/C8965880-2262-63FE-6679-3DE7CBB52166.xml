@@ -31,6 +31,116 @@
 <colAssociation fkAssociation="C08EBE2E-5A26-60A0-E179-591F7C28823F" referredColumn="2CF9BB3B-D809-7E4F-37D6-980A64E39058"/>
 </associations>
 </Column>
+<Column name="user_name_translit" id="A7DA8DE7-9D63-B71A-1E7B-2288D2ED2006">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:23:08 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location_translit" id="F4109A8F-D6BA-A490-58B1-955A7F04A54D">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:23:45 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description_translit" id="9B49737A-0970-85B4-1BDC-C4A376469FD6">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:23:45 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="7B3664AD-46C6-5CE7-0CD8-E61078A53064">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:24:57 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags_translit" id="8381D43F-981D-B386-B311-8423DDCC3AF4">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:25:17 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sentiment" id="16AFEA82-6511-5189-AD71-F936CD531279">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:25:38 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>6D4B3182-4EBA-F373-DD51-DB963CAD8C9F</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lang_value" id="BA31AF88-A663-B140-B5A0-C1CCF2AE2487">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:26:21 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lang_primary" id="7AF6B363-0246-4D5E-F882-CBBC400DA94D">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:26:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lang_others" id="A39874C8-E932-30F5-68DC-D2AE67216247">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:26:41 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>404601E9-160E-9ABF-836E-4BAC42A2CA35</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_translated" id="053D2001-93B7-C8BC-27BB-E49C823B1C5F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:27:00 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>0EA94F02-5083-563D-3993-782A1D049D3E</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="2C8018C2-43A5-7199-0032-E2CBB3FE25E7" name="instagram_PK">

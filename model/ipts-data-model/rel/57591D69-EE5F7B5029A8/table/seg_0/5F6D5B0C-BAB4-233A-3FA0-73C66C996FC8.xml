@@ -14,7 +14,7 @@
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -27,12 +27,23 @@
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="ED4749D3-BD2D-B4AD-877D-B3B362116885" referredColumn="CAAD8B93-F789-AF0C-0EE7-743A2D68675C"/>
 </associations>
+</Column>
+<Column name="confidence" id="19D433E9-569D-A974-8437-1DFC98D07BB1">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-10 13:33:22 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

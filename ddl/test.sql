@@ -87,8 +87,7 @@ image_id );
 CREATE TABLE shared_folders 
     ( 
      shared_folder_id INTEGER  NOT NULL , 
-     name             character varying , 
-     created_at       TIMESTAMP(6) WITH TIME ZONE 
+     name             character varying 
     ) 
 ;
 
@@ -112,13 +111,10 @@ CREATE TABLE tag_types
 
 ALTER TABLE tag_types ADD CONSTRAINT tag_types_pk PRIMARY KEY ( tag_type_id );
 
-CREATE TABLE tags 
-    ( 
-     tag_id      INTEGER  NOT NULL , 
-     tag_type_id INTEGER  NOT NULL , 
-     name        character varying 
-    ) 
-;
+CREATE TABLE tags (
+    tag_id        INTEGER NOT NULL,
+    tag_type_id   INTEGER NOT NULL
+);
 
 ALTER TABLE tags ADD CONSTRAINT tag_pk PRIMARY KEY ( tag_id );
 
