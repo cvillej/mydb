@@ -1,7 +1,5 @@
-
-
 CREATE TABLE image_tags (
-    image_id     INTEGER NOT NULL,
+    image_id     serial NOT NULL,
     tag_id       INTEGER NOT NULL,
     confidence   INTEGER
 );
@@ -10,7 +8,7 @@ ALTER TABLE image_tags ADD CONSTRAINT image_tags_pk PRIMARY KEY ( image_id,
 tag_id );
 
 CREATE TABLE images (
-    image_id      INTEGER NOT NULL,
+    image_id      serial NOT NULL,
     location_id   INTEGER NOT NULL,
     source_id     INTEGER NOT NULL
 );
@@ -19,7 +17,7 @@ ALTER TABLE images ADD CONSTRAINT image_pk PRIMARY KEY ( image_id );
 
 CREATE TABLE instagram 
     ( 
-     instagram_id         INTEGER  NOT NULL , 
+     instagram_id         serial  NOT NULL , 
      source_id            INTEGER  NOT NULL , 
      user_name_translit   character varying , 
      location_translit    character varying , 
@@ -61,7 +59,7 @@ ALTER TABLE locations ADD CONSTRAINT locations_pk PRIMARY KEY ( location_id );
 
 CREATE TABLE photos 
     ( 
-     photo_id       INTEGER  NOT NULL , 
+     photo_id       serial  NOT NULL , 
      source_id      INTEGER  NOT NULL , 
      title_translat character varying , 
      title_translit character varying , 
@@ -78,7 +76,7 @@ ALTER TABLE photos ADD CONSTRAINT photos_pk PRIMARY KEY ( photo_id );
 
 CREATE TABLE shared_folder_images (
     shared_folder_id   INTEGER NOT NULL,
-    image_id           INTEGER NOT NULL
+    image_id           serial NOT NULL
 );
 
 ALTER TABLE shared_folder_images ADD CONSTRAINT shared_folder_images_pk PRIMARY KEY ( shared_folder_id,
@@ -124,7 +122,7 @@ ALTER TABLE tags ADD CONSTRAINT tag_pk PRIMARY KEY ( tag_id );
 
 CREATE TABLE vk_albums 
     ( 
-     vk_album_id     INTEGER  NOT NULL , 
+     vk_album_id     serial  NOT NULL , 
      source_id       INTEGER  NOT NULL , 
      profile_image   character varying , 
      relation_status character varying , 
