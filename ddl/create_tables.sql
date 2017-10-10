@@ -30,7 +30,7 @@ ALTER TABLE instagram ADD CONSTRAINT instagram_pk PRIMARY KEY ( instagram_id );
 
 CREATE TABLE location_type (
     location_type_id   INTEGER NOT NULL,
-    name               VARCHAR2(200)
+    name               VARCHAR(200)
 );
 
 ALTER TABLE location_type ADD CONSTRAINT location_type_pk PRIMARY KEY ( location_type_id );
@@ -59,21 +59,21 @@ image_id );
 
 CREATE TABLE shared_folders (
     shared_folder_id   INTEGER NOT NULL,
-    name               VARCHAR2(200)
+    name               VARCHAR(200)
 );
 
 ALTER TABLE shared_folders ADD CONSTRAINT shared_folders_pk PRIMARY KEY ( shared_folder_id );
 
 CREATE TABLE sources (
     source_id   INTEGER NOT NULL,
-    name        VARCHAR2(200)
+    name        VARCHAR(200)
 );
 
 ALTER TABLE sources ADD CONSTRAINT sources_pk PRIMARY KEY ( source_id );
 
 CREATE TABLE tag_types (
     tag_type_id   INTEGER NOT NULL,
-    name          VARCHAR2(500)
+    name          VARCHAR(500)
 );
 
 ALTER TABLE tag_types ADD CONSTRAINT tag_types_pk PRIMARY KEY ( tag_type_id );
