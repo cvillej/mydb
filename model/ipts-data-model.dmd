@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ipts-data-model" id="2D0BAC64-D1BE-5495-CE90-1B07186C5928" version="3.5">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:15:39 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2D0BAC64-D1BE-5495-CE90-1B07186C5928</designId>
+</OSDM_Design>

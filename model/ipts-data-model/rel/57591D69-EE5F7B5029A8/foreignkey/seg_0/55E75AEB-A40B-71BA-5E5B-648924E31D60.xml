@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="55E75AEB-A40B-71BA-5E5B-648924E31D60" containerWithKeyObject="DA73E21D-5AFE-AD46-C407-29C79821D9E9" localFKIndex="5B2222D4-AAEA-0502-6E06-EFD501878146" name="tags_tag_types_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:32:06 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<referredTableLongName>tag_types</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB774379-CB14-C460-D288-A513254EC0C3</referredTableID>
+<keyObject>74293C24-CA48-57C4-2BA0-CB974519E412</keyObject>
+<referredKeyID>74293C24-CA48-57C4-2BA0-CB974519E412</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tag_type_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

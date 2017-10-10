@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="tag_types" directorySegmentName="seg_0" id="CB774379-CB14-C460-D288-A513254EC0C3">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:29:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="tag_type_id" id="1A0386BD-0154-6D6A-6C5C-9F1E6D23570B">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:30:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name" id="A722B21D-ABA2-0328-8760-EA5E38D50C38">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:30:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tag_types_PK" id="74293C24-CA48-57C4-2BA0-CB974519E412">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:30:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

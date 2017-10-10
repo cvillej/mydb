@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="vk_albums" directorySegmentName="seg_0" id="3B3C3818-FB68-F49B-11C1-443ECCE1F5E3">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:40:54 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="source_id" id="5F357900-9D71-20C1-F174-67345A2D327F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:46:57 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vk_album_id" id="7D6F8CC8-1029-ECA7-1223-1B7F7A5E0D44">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:41:21 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="vk_albums_sources_FK" id="3FCBCECB-B68C-EAA4-E1DE-CD1D76C57B2B">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:47:11 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="vk_albums_PK" id="3C2AB500-42AD-40B0-51EB-1EDF3708CF61">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:41:24 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

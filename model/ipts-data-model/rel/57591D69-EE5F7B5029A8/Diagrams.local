@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="05916F82-AF19-459A-42AA-FAA9BCC7AEAA" name="ipts" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

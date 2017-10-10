@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B287C372-1C93-C619-0654-346BF5043E2E" name="shared_folder_images">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:58 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shared_folder_id" id="199FCF87-0490-0882-46D7-F140675B3E1C">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:37:25 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49907222-88D9-6072-2E03-453F297185D0" referredColumn="E91FEED0-5EA0-0BCB-3936-C0A21637C245"/>
+</associations>
+</Column>
+<Column name="image_id" id="BEA545AF-E4CC-1570-29C9-C89DC6B05378">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:37:38 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B8F72A1-72FD-EE76-7B3B-71459B20DA83" referredColumn="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D39C8B8E-4E9F-5F36-80E3-8744E5CF82A1" name="shared_folder_images_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:37:25 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="199FCF87-0490-0882-46D7-F140675B3E1C"/>
+<colUsage columnID="BEA545AF-E4CC-1570-29C9-C89DC6B05378"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EB025DA-42B8-DEE4-4148-6D2790A58768" name="shared_folder_images_shared_folders_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:38:11 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="199FCF87-0490-0882-46D7-F140675B3E1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8378F4CC-9254-7A70-B016-E2E83C036EB3" name="shared_folder_images_images_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:38:20 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEA545AF-E4CC-1570-29C9-C89DC6B05378"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

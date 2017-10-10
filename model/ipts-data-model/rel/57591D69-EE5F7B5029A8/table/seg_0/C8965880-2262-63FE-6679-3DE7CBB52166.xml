@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8965880-2262-63FE-6679-3DE7CBB52166" name="instagram">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:39:36 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="instagram_id" id="52992776-1CAD-121A-D798-52A8A028805F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:40:01 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="source_id" id="8E4198D6-4FC8-2C92-907E-EAA6EB8B8108">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:45:19 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C08EBE2E-5A26-60A0-E179-591F7C28823F" referredColumn="2CF9BB3B-D809-7E4F-37D6-980A64E39058"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C8018C2-43A5-7199-0032-E2CBB3FE25E7" name="instagram_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:41:31 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52992776-1CAD-121A-D798-52A8A028805F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08EA2B33-6741-0F8F-086E-15266683102A" name="instagram_sources_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:45:46 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E4198D6-4FC8-2C92-907E-EAA6EB8B8108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

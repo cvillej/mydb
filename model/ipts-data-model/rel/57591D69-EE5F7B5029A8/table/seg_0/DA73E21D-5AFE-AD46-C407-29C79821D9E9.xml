@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA73E21D-5AFE-AD46-C407-29C79821D9E9" name="tags">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:21:14 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tag_id" id="CAAD8B93-F789-AF0C-0EE7-743A2D68675C">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:21:30 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tag_type_id" id="CF6BA114-A059-EC7D-007B-638EE9451C05">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:31:48 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55E75AEB-A40B-71BA-5E5B-648924E31D60" referredColumn="1A0386BD-0154-6D6A-6C5C-9F1E6D23570B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96969BF6-D79E-3932-2955-5315924D5B48" name="tag_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:21:30 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAAD8B93-F789-AF0C-0EE7-743A2D68675C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B2222D4-AAEA-0502-6E06-EFD501878146" name="tags_tag_types_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:32:06 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF6BA114-A059-EC7D-007B-638EE9451C05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

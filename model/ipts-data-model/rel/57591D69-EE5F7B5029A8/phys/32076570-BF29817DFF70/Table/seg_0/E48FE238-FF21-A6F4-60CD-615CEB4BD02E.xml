@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="shared_folders" directorySegmentName="seg_0" id="E48FE238-FF21-A6F4-60CD-615CEB4BD02E">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:22:09 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="name" id="B0CF5444-15F8-580B-FA4D-804EF45EBE12">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:30 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="shared_folder_id" id="E91FEED0-5EA0-0BCB-3936-C0A21637C245">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:13 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="shared_folders_PK" id="F138A07B-2E48-998B-21CD-11C06BEE8271">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:13 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B3C3818-FB68-F49B-11C1-443ECCE1F5E3" name="vk_albums">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:40:54 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vk_album_id" id="7D6F8CC8-1029-ECA7-1223-1B7F7A5E0D44">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:41:21 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="source_id" id="5F357900-9D71-20C1-F174-67345A2D327F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:46:57 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67098672-93E7-38CD-2498-EFC0806DEBFF" referredColumn="2CF9BB3B-D809-7E4F-37D6-980A64E39058"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C2AB500-42AD-40B0-51EB-1EDF3708CF61" name="vk_albums_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:41:24 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D6F8CC8-1029-ECA7-1223-1B7F7A5E0D44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FCBCECB-B68C-EAA4-E1DE-CD1D76C57B2B" name="vk_albums_sources_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:47:11 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F357900-9D71-20C1-F174-67345A2D327F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

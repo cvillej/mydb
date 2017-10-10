@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="49907222-88D9-6072-2E03-453F297185D0" containerWithKeyObject="B287C372-1C93-C619-0654-346BF5043E2E" localFKIndex="6EB025DA-42B8-DEE4-4148-6D2790A58768" name="shared_folder_images_shared_folders_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:38:11 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<referredTableLongName>shared_folders</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E48FE238-FF21-A6F4-60CD-615CEB4BD02E</referredTableID>
+<keyObject>F138A07B-2E48-998B-21CD-11C06BEE8271</keyObject>
+<referredKeyID>F138A07B-2E48-998B-21CD-11C06BEE8271</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>shared_folder_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

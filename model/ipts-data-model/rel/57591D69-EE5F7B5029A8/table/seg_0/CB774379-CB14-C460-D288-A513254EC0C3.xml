@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB774379-CB14-C460-D288-A513254EC0C3" name="tag_types">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:29:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tag_type_id" id="1A0386BD-0154-6D6A-6C5C-9F1E6D23570B">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:30:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A722B21D-ABA2-0328-8760-EA5E38D50C38">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:30:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74293C24-CA48-57C4-2BA0-CB974519E412" name="tag_types_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:30:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A0386BD-0154-6D6A-6C5C-9F1E6D23570B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

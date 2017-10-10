@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="image_tags" directorySegmentName="seg_0" id="5F6D5B0C-BAB4-233A-3FA0-73C66C996FC8">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:33:16 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="image_id" id="3967D33E-6813-0603-DD4D-2C486AC671E1">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:33:35 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tag_id" id="A534C42D-6A13-F35B-476A-644D311CED3F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:33:51 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="image_tags_tags_FK" id="5877B2B7-EE6B-2B12-4BBC-7AD522183068">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:34:55 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="image_tags_images_FK" id="BFEE5FF5-94E2-6B5F-C32B-1E64AB6892D2">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:34:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="image_tags_PK" id="5F3AABFC-A53A-31D2-8AE3-BF3F37ED4640">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:34:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E48FE238-FF21-A6F4-60CD-615CEB4BD02E" name="shared_folders">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:22:09 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shared_folder_id" id="E91FEED0-5EA0-0BCB-3936-C0A21637C245">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:13 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="B0CF5444-15F8-580B-FA4D-804EF45EBE12">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:30 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F138A07B-2E48-998B-21CD-11C06BEE8271" name="shared_folders_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:36:13 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E91FEED0-5EA0-0BCB-3936-C0A21637C245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

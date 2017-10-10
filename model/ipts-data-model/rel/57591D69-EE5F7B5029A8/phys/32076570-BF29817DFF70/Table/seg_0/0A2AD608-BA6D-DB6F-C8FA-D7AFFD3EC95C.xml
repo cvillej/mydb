@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="images" directorySegmentName="seg_0" id="0A2AD608-BA6D-DB6F-C8FA-D7AFFD3EC95C">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:19:55 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="image_id" id="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:20:07 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="location_id" id="49A1B01C-722B-C74F-7E2B-4121FC861A96">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:26:47 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="source_id" id="DA834882-1D5E-A83A-09AE-372E5CD3D7DB">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:52:00 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="images_sources_FK" id="E199F82E-CDBD-0014-2D0A-5EFDAB246F41">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:52:16 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="images_locations_FK" id="F0A828A1-62BB-392F-67CD-B298124D823A">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:27:58 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="image_PK" id="124017AC-F971-5AFE-1A20-91B9DDF883DD">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:21:39 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

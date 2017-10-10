@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEB3D1B7-D8EB-5CF1-AF72-49649704CA39" name="photos">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:52:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="photo_id" id="75E21836-DC0A-26C9-F66B-CAED634F41B4">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:52:59 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="source_id" id="714310A6-28B4-8F3E-ED66-4CB49487D846">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:53:12 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01D28CB2-2394-2171-5F3B-96A430B2E5AA" referredColumn="2CF9BB3B-D809-7E4F-37D6-980A64E39058"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6946BEB5-0B20-F4F2-925D-6EDCD408C995" name="photos_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:52:59 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75E21836-DC0A-26C9-F66B-CAED634F41B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="172DBF75-E732-06F0-2C66-E327DA4E7574" name="photos_sources_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:53:28 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="714310A6-28B4-8F3E-ED66-4CB49487D846"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

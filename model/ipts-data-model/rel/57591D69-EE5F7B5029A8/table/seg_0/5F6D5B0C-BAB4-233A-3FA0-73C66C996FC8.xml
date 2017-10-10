@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F6D5B0C-BAB4-233A-3FA0-73C66C996FC8" name="image_tags">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:33:16 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="image_id" id="3967D33E-6813-0603-DD4D-2C486AC671E1">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:33:35 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41E27B61-E550-23A1-5DFF-C658951E8B0D" referredColumn="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
+</associations>
+</Column>
+<Column name="tag_id" id="A534C42D-6A13-F35B-476A-644D311CED3F">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:33:51 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED4749D3-BD2D-B4AD-877D-B3B362116885" referredColumn="CAAD8B93-F789-AF0C-0EE7-743A2D68675C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F3AABFC-A53A-31D2-8AE3-BF3F37ED4640" name="image_tags_PK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:34:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3967D33E-6813-0603-DD4D-2C486AC671E1"/>
+<colUsage columnID="A534C42D-6A13-F35B-476A-644D311CED3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFEE5FF5-94E2-6B5F-C32B-1E64AB6892D2" name="image_tags_images_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:34:43 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3967D33E-6813-0603-DD4D-2C486AC671E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5877B2B7-EE6B-2B12-4BBC-7AD522183068" name="image_tags_tags_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:34:55 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A534C42D-6A13-F35B-476A-644D311CED3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

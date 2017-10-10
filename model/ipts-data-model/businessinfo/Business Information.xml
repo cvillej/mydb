@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="CD0E6279-F341-88CF-74CA-6B21224DBF1C">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-09 15:15:39 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>
