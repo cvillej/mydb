@@ -14,22 +14,9 @@
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>DE9FCACE-AD66-86AD-0753-053B74720B54</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="source_id" id="8E4198D6-4FC8-2C92-907E-EAA6EB8B8108">
-<createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:45:19 UTC</createdTime>
-<ownerDesignName>ipts-data-model</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C08EBE2E-5A26-60A0-E179-591F7C28823F" referredColumn="2CF9BB3B-D809-7E4F-37D6-980A64E39058"/>
-</associations>
 </Column>
 <Column name="user_name_translit" id="A7DA8DE7-9D63-B71A-1E7B-2288D2ED2006">
 <createdBy>juser</createdBy>
@@ -152,16 +139,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="52992776-1CAD-121A-D798-52A8A028805F"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="08EA2B33-6741-0F8F-086E-15266683102A" name="instagram_sources_FK">
-<createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:45:46 UTC</createdTime>
-<ownerDesignName>ipts-data-model</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="8E4198D6-4FC8-2C92-907E-EAA6EB8B8108"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

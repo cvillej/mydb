@@ -1,0 +1,1 @@
+drop sequence images_image_id_seq;

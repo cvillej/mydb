@@ -1,24 +1,29 @@
-DROP TABLE image_tags CASCADE;
+DROP TABLE image_tags CASCADE ;
 
-DROP TABLE images CASCADE;
+DROP TABLE images CASCADE ;
 
-DROP TABLE instagram CASCADE;
+DROP TABLE instagram CASCADE ;
 
-DROP TABLE location_type CASCADE;
+DROP TABLE instagram_images CASCADE ;
 
-DROP TABLE locations CASCADE;
+DROP TABLE location_type CASCADE ;
 
-DROP TABLE photos CASCADE;
+DROP TABLE locations CASCADE ;
 
-DROP TABLE shared_folder_images CASCADE;
+DROP TABLE photo_images CASCADE ;
 
-DROP TABLE shared_folders CASCADE;
+DROP TABLE photos CASCADE ;
 
-DROP TABLE sources CASCADE;
+DROP TABLE shared_folder_images CASCADE ;
 
-DROP TABLE tag_types CASCADE;
+DROP TABLE shared_folders CASCADE ;
 
-DROP TABLE tags CASCADE;
+DROP TABLE sources CASCADE ;
 
-DROP TABLE vk_albums CASCADE;
+DROP TABLE tag_types CASCADE ;
 
+DROP TABLE tags CASCADE ;
+
+DROP TABLE vk_albums CASCADE ;
+
+DROP TABLE vk_images CASCADE ;

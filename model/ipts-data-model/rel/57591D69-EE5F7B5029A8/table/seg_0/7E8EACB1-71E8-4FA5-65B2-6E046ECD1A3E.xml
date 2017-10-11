@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B287C372-1C93-C619-0654-346BF5043E2E" name="shared_folder_images">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E8EACB1-71E8-4FA5-65B2-6E046ECD1A3E" name="photo_images">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:36:58 UTC</createdTime>
+<createdTime>2017-10-11 11:52:17 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
-<ordsAlias>table_9</ordsAlias>
+<ordsAlias>table_16</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="shared_folder_id" id="199FCF87-0490-0882-46D7-F140675B3E1C">
+<Column name="photo_id" id="A3A42EEE-4752-1DFC-156D-399374ABAC39">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:37:25 UTC</createdTime>
+<createdTime>2017-10-11 11:52:36 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,12 +18,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="49907222-88D9-6072-2E03-453F297185D0" referredColumn="E91FEED0-5EA0-0BCB-3936-C0A21637C245"/>
+<colAssociation fkAssociation="2D412700-DACF-F85D-AD6D-5BBDBF881B3F" referredColumn="75E21836-DC0A-26C9-F66B-CAED634F41B4"/>
 </associations>
 </Column>
-<Column name="image_id" id="BEA545AF-E4CC-1570-29C9-C89DC6B05378">
+<Column name="image_id" id="C86C19CC-60A6-3A4B-4431-5C48DE5645A0">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:37:38 UTC</createdTime>
+<createdTime>2017-10-11 11:52:47 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,10 +31,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="EFB3289A-05C5-795C-2B05-883AF78A5B99" referredColumn="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
+<colAssociation fkAssociation="FD6211C9-6731-6C77-5DD9-D1CC53455B14" referredColumn="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
 </associations>
 </Column>
-<Column name="images_location_id" id="E573B93F-17D3-2A45-2C4B-68B0F55FD3AE">
+<Column name="images_location_id" id="BD72F63C-9E19-2076-7085-C59AEA2EBF86">
 <createdBy>juser</createdBy>
 <createdTime>2017-10-11 12:25:33 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
@@ -45,10 +45,10 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="EFB3289A-05C5-795C-2B05-883AF78A5B99" referredColumn="49A1B01C-722B-C74F-7E2B-4121FC861A96"/>
+<colAssociation fkAssociation="FD6211C9-6731-6C77-5DD9-D1CC53455B14" referredColumn="49A1B01C-722B-C74F-7E2B-4121FC861A96"/>
 </associations>
 </Column>
-<Column name="images_source_id" id="3C46846E-585F-1D49-54A0-77E6D882680B">
+<Column name="images_source_id" id="B31C1EBC-BAC2-1E69-05AD-98235A4E2B5E">
 <createdBy>juser</createdBy>
 <createdTime>2017-10-11 12:25:33 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
@@ -59,43 +59,31 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="EFB3289A-05C5-795C-2B05-883AF78A5B99" referredColumn="DA834882-1D5E-A83A-09AE-372E5CD3D7DB"/>
+<colAssociation fkAssociation="FD6211C9-6731-6C77-5DD9-D1CC53455B14" referredColumn="DA834882-1D5E-A83A-09AE-372E5CD3D7DB"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D39C8B8E-4E9F-5F36-80E3-8744E5CF82A1" name="shared_folder_images_PK">
+<ind_PK_UK id="93A02839-7DD5-5C0E-D620-66BB96961AB1" name="photo_images_photos_FK">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:37:25 UTC</createdTime>
-<ownerDesignName>ipts-data-model</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="199FCF87-0490-0882-46D7-F140675B3E1C"/>
-<colUsage columnID="BEA545AF-E4CC-1570-29C9-C89DC6B05378"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6EB025DA-42B8-DEE4-4148-6D2790A58768" name="shared_folder_images_shared_folders_FK">
-<createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:38:11 UTC</createdTime>
+<createdTime>2017-10-11 11:52:57 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="199FCF87-0490-0882-46D7-F140675B3E1C"/>
+<colUsage columnID="A3A42EEE-4752-1DFC-156D-399374ABAC39"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D183EDFC-4DFE-B3BA-5C2B-C2BBC025F563" name="shared_folder_images_images_FK">
+<ind_PK_UK id="27ACB330-A335-4206-B46C-7A81F3B7CA43" name="photo_images_images_FK">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-11 11:41:43 UTC</createdTime>
+<createdTime>2017-10-11 11:53:05 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BEA545AF-E4CC-1570-29C9-C89DC6B05378"/>
-<colUsage columnID="E573B93F-17D3-2A45-2C4B-68B0F55FD3AE"/>
-<colUsage columnID="3C46846E-585F-1D49-54A0-77E6D882680B"/>
+<colUsage columnID="C86C19CC-60A6-3A4B-4431-5C48DE5645A0"/>
+<colUsage columnID="BD72F63C-9E19-2076-7085-C59AEA2EBF86"/>
+<colUsage columnID="B31C1EBC-BAC2-1E69-05AD-98235A4E2B5E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -17,9 +17,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="41E27B61-E550-23A1-5DFF-C658951E8B0D" referredColumn="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
-</associations>
 </Column>
 <Column name="tag_id" id="A534C42D-6A13-F35B-476A-644D311CED3F">
 <createdBy>juser</createdBy>
@@ -32,6 +29,7 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="ED4749D3-BD2D-B4AD-877D-B3B362116885" referredColumn="CAAD8B93-F789-AF0C-0EE7-743A2D68675C"/>
+<colAssociation fkAssociation="E074A307-B47E-220C-5D97-03DA6D9221B2" referredColumn="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
 </associations>
 </Column>
 <Column name="confidence" id="19D433E9-569D-A974-8437-1DFC98D07BB1">
@@ -44,6 +42,34 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="images_location_id" id="3BD21C9B-2281-0949-950F-7208A4746F9E">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-11 12:25:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E074A307-B47E-220C-5D97-03DA6D9221B2" referredColumn="49A1B01C-722B-C74F-7E2B-4121FC861A96"/>
+</associations>
+</Column>
+<Column name="images_source_id" id="009E7330-D56E-BF0F-63EA-08522F0C35DD">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-11 12:25:33 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E074A307-B47E-220C-5D97-03DA6D9221B2" referredColumn="DA834882-1D5E-A83A-09AE-372E5CD3D7DB"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -59,16 +85,6 @@
 <colUsage columnID="A534C42D-6A13-F35B-476A-644D311CED3F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BFEE5FF5-94E2-6B5F-C32B-1E64AB6892D2" name="image_tags_images_FK">
-<createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:34:43 UTC</createdTime>
-<ownerDesignName>ipts-data-model</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="3967D33E-6813-0603-DD4D-2C486AC671E1"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="5877B2B7-EE6B-2B12-4BBC-7AD522183068" name="image_tags_tags_FK">
 <createdBy>juser</createdBy>
 <createdTime>2017-10-09 15:34:55 UTC</createdTime>
@@ -77,6 +93,18 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A534C42D-6A13-F35B-476A-644D311CED3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81A59933-005D-B2AD-5002-B6EE955091AD" name="image_tags_images_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-11 11:40:29 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A534C42D-6A13-F35B-476A-644D311CED3F"/>
+<colUsage columnID="3BD21C9B-2281-0949-950F-7208A4746F9E"/>
+<colUsage columnID="009E7330-D56E-BF0F-63EA-08522F0C35DD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

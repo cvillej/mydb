@@ -14,7 +14,7 @@
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>DE9FCACE-AD66-86AD-0753-053B74720B54</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -46,15 +46,17 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="124017AC-F971-5AFE-1A20-91B9DDF883DD" name="image_PK">
+<ind_PK_UK id="DDDBC29D-77A5-060B-CEA0-62A2407CD59E" name="images_PK">
 <createdBy>juser</createdBy>
-<createdTime>2017-10-09 15:21:39 UTC</createdTime>
+<createdTime>2017-10-11 11:36:53 UTC</createdTime>
 <ownerDesignName>ipts-data-model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2E0ECB3B-4BF2-1453-80E4-7A975C9FD9D8"/>
+<colUsage columnID="49A1B01C-722B-C74F-7E2B-4121FC861A96"/>
+<colUsage columnID="DA834882-1D5E-A83A-09AE-372E5CD3D7DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="E199F82E-CDBD-0014-2D0A-5EFDAB246F41" name="images_sources_FK">

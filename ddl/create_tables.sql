@@ -1,24 +1,28 @@
 CREATE TABLE image_tags (
-    image_id     serial NOT NULL,
-    tag_id       INTEGER NOT NULL,
-    confidence   INTEGER
+    image_id             INTEGER NOT NULL,
+    tag_id               INTEGER NOT NULL,
+    confidence           INTEGER,
+    images_location_id   INTEGER NOT NULL,
+    images_source_id     INTEGER NOT NULL
 );
 
 ALTER TABLE image_tags ADD CONSTRAINT image_tags_pk PRIMARY KEY ( image_id,
 tag_id );
 
 CREATE TABLE images (
-    image_id      serial NOT NULL,
+    image_id      INTEGER NOT NULL,
     location_id   INTEGER NOT NULL,
     source_id     INTEGER NOT NULL
 );
 
-ALTER TABLE images ADD CONSTRAINT image_pk PRIMARY KEY ( image_id );
+ALTER TABLE images
+    ADD CONSTRAINT images_pk PRIMARY KEY ( image_id,
+    location_id,
+    source_id );
 
 CREATE TABLE instagram 
     ( 
-     instagram_id         serial  NOT NULL , 
-     source_id            INTEGER  NOT NULL , 
+     instagram_id         INTEGER  NOT NULL , 
      user_name_translit   character varying , 
      location_translit    character varying , 
      description_translit character varying , 
@@ -33,6 +37,13 @@ CREATE TABLE instagram
 ;
 
 ALTER TABLE instagram ADD CONSTRAINT instagram_pk PRIMARY KEY ( instagram_id );
+
+CREATE TABLE instagram_images (
+    instagram_id         INTEGER NOT NULL,
+    image_id             INTEGER NOT NULL,
+    images_location_id   INTEGER NOT NULL,
+    images_source_id     INTEGER NOT NULL
+);
 
 CREATE TABLE location_type 
     ( 
@@ -57,10 +68,16 @@ CREATE TABLE locations
 
 ALTER TABLE locations ADD CONSTRAINT locations_pk PRIMARY KEY ( location_id );
 
+CREATE TABLE photo_images (
+    photo_id             INTEGER NOT NULL,
+    image_id             INTEGER NOT NULL,
+    images_location_id   INTEGER NOT NULL,
+    images_source_id     INTEGER NOT NULL
+);
+
 CREATE TABLE photos 
     ( 
-     photo_id       serial  NOT NULL , 
-     source_id      INTEGER  NOT NULL , 
+     photo_id       INTEGER  NOT NULL , 
      title_translat character varying , 
      title_translit character varying , 
      service        character varying , 
@@ -75,8 +92,10 @@ CREATE TABLE photos
 ALTER TABLE photos ADD CONSTRAINT photos_pk PRIMARY KEY ( photo_id );
 
 CREATE TABLE shared_folder_images (
-    shared_folder_id   INTEGER NOT NULL,
-    image_id           serial NOT NULL
+    shared_folder_id     INTEGER NOT NULL,
+    image_id             INTEGER NOT NULL,
+    images_location_id   INTEGER NOT NULL,
+    images_source_id     INTEGER NOT NULL
 );
 
 ALTER TABLE shared_folder_images ADD CONSTRAINT shared_folder_images_pk PRIMARY KEY ( shared_folder_id,
@@ -122,8 +141,7 @@ ALTER TABLE tags ADD CONSTRAINT tag_pk PRIMARY KEY ( tag_id );
 
 CREATE TABLE vk_albums 
     ( 
-     vk_album_id     serial  NOT NULL , 
-     source_id       INTEGER  NOT NULL , 
+     vk_album_id     INTEGER  NOT NULL , 
      profile_image   character varying , 
      relation_status character varying , 
      birthday        character varying , 
@@ -155,9 +173,20 @@ CREATE TABLE vk_albums
 
 ALTER TABLE vk_albums ADD CONSTRAINT vk_albums_pk PRIMARY KEY ( vk_album_id );
 
+CREATE TABLE vk_images (
+    vk_album_id          INTEGER NOT NULL,
+    image_id             INTEGER NOT NULL,
+    images_location_id   INTEGER NOT NULL,
+    images_source_id     INTEGER NOT NULL
+);
+
 ALTER TABLE image_tags
-    ADD CONSTRAINT image_tags_images_fk FOREIGN KEY ( image_id )
-        REFERENCES images ( image_id );
+    ADD CONSTRAINT image_tags_images_fk FOREIGN KEY ( tag_id,
+    images_location_id,
+    images_source_id )
+        REFERENCES images ( image_id,
+        location_id,
+        source_id );
 
 ALTER TABLE image_tags
     ADD CONSTRAINT image_tags_tags_fk FOREIGN KEY ( tag_id )
@@ -171,21 +200,41 @@ ALTER TABLE images
     ADD CONSTRAINT images_sources_fk FOREIGN KEY ( source_id )
         REFERENCES sources ( source_id );
 
-ALTER TABLE instagram
-    ADD CONSTRAINT instagram_sources_fk FOREIGN KEY ( source_id )
-        REFERENCES sources ( source_id );
+ALTER TABLE instagram_images
+    ADD CONSTRAINT instagram_images_images_fk FOREIGN KEY ( image_id,
+    images_location_id,
+    images_source_id )
+        REFERENCES images ( image_id,
+        location_id,
+        source_id );
+
+ALTER TABLE instagram_images
+    ADD CONSTRAINT instagram_images_instagram_fk FOREIGN KEY ( instagram_id )
+        REFERENCES instagram ( instagram_id );
 
 ALTER TABLE locations
     ADD CONSTRAINT locations_location_type_fk FOREIGN KEY ( location_type_id )
         REFERENCES location_type ( location_type_id );
 
-ALTER TABLE photos
-    ADD CONSTRAINT photos_sources_fk FOREIGN KEY ( source_id )
-        REFERENCES sources ( source_id );
+ALTER TABLE photo_images
+    ADD CONSTRAINT photo_images_images_fk FOREIGN KEY ( image_id,
+    images_location_id,
+    images_source_id )
+        REFERENCES images ( image_id,
+        location_id,
+        source_id );
+
+ALTER TABLE photo_images
+    ADD CONSTRAINT photo_images_photos_fk FOREIGN KEY ( photo_id )
+        REFERENCES photos ( photo_id );
 
 ALTER TABLE shared_folder_images
-    ADD CONSTRAINT shared_folder_images_images_fk FOREIGN KEY ( image_id )
-        REFERENCES images ( image_id );
+    ADD CONSTRAINT shared_folder_images_images_fk FOREIGN KEY ( image_id,
+    images_location_id,
+    images_source_id )
+        REFERENCES images ( image_id,
+        location_id,
+        source_id );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE shared_folder_images
@@ -196,17 +245,25 @@ ALTER TABLE tags
     ADD CONSTRAINT tags_tag_types_fk FOREIGN KEY ( tag_type_id )
         REFERENCES tag_types ( tag_type_id );
 
-ALTER TABLE vk_albums
-    ADD CONSTRAINT vk_albums_sources_fk FOREIGN KEY ( source_id )
-        REFERENCES sources ( source_id );
+ALTER TABLE vk_images
+    ADD CONSTRAINT vk_images_images_fk FOREIGN KEY ( image_id,
+    images_location_id,
+    images_source_id )
+        REFERENCES images ( image_id,
+        location_id,
+        source_id );
+
+ALTER TABLE vk_images
+    ADD CONSTRAINT vk_images_vk_albums_fk FOREIGN KEY ( vk_album_id )
+        REFERENCES vk_albums ( vk_album_id );
 
 
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
 -- 
--- CREATE TABLE                            12
+-- CREATE TABLE                            15
 -- CREATE INDEX                             0
--- ALTER TABLE                             23
+-- ALTER TABLE                             26
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

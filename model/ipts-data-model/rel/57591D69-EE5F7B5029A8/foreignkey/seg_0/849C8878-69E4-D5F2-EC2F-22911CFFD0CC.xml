@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="849C8878-69E4-D5F2-EC2F-22911CFFD0CC" containerWithKeyObject="869BD96B-2409-E409-0C61-CFC8818A50F1" localFKIndex="3C790A0B-4E40-A240-BF60-A0F15BB003A9" name="instagram_images_instagram_FK">
+<createdBy>juser</createdBy>
+<createdTime>2017-10-11 11:50:36 UTC</createdTime>
+<ownerDesignName>ipts-data-model</ownerDesignName>
+<referredTableLongName>instagram</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C8965880-2262-63FE-6679-3DE7CBB52166</referredTableID>
+<keyObject>2C8018C2-43A5-7199-0032-E2CBB3FE25E7</keyObject>
+<referredKeyID>2C8018C2-43A5-7199-0032-E2CBB3FE25E7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>instagram_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
